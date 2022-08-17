@@ -1,3 +1,4 @@
+USE SpotifyClone
 SELECT COUNT(ca.cancoes) cancoes, COUNT(ar.name) artistas, COUNT(al.album) albuns
 FROM cancoes ca
 JOIN album al
