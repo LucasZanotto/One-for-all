@@ -1,4 +1,4 @@
-SELECT ca.cancoes cancao, COUNT(hi.cancoes_id)
+SELECT ca.cancoes cancao, COUNT(hi.cancoes_id) reproducoes
 FROM cancoes ca
 JOIN historico_de_reproducoes hi
 ON ca.cancoes_id = hi.cancoes_id
