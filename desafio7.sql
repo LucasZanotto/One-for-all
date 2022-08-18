@@ -5,4 +5,4 @@ ON al.artista_id = ar.artist_id
 JOIN seguindo_artistas se
 ON se.artist_id = ar.artist_id
 GROUP BY al.album, ar.name
-ORDER BY COUNT(se.usuario_id) DESC, ar.name ASC;
+ORDER BY COUNT(se.usuario_id) DESC, ar.name ASC, al.album ASC;
