@@ -57,7 +57,7 @@ VALUES ('BREAK MY SOUL',279, 1),
 CREATE TABLE SpotifyClone.plano(
 plano_id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
 escolha_id VARCHAR(100) NOT NULL,
-valor_plano INT NOT NULL
+valor_plano DECIMAL(3, 2) NOT NULL
 );
 
 INSERT INTO SpotifyClone.`plano`(escolha_id, valor_plano)
@@ -70,7 +70,7 @@ CREATE TABLE SpotifyClone.usuario(
 usuario_id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
 usuario VARCHAR(100) NOT NULL,
 idade INT NOT NULL,
-data_assinatura VARCHAR(100) NOT NULL,
+data_assinatura DATE NOT NULL,
 plano_id INT NOT NULL,
 FOREIGN KEY (plano_id) REFERENCES SpotifyClone.plano(plano_id)
 );
